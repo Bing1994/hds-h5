@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>设置</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/setting.css">
+</head>
+<body>
+	<div>
+		<div id="common_header">
+			<header class="hds-header">
+				<div class="hds-header-bar">
+					<div id="common_header_goback" class="hds-header-icon-back">
+						<span></span>
+					</div>
+					<div class="hds-header-title">
+						设置
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="setting-content">
+			<div class="header-hold">
+			</div>
+			<div class="setting-content-msg">
+				<div class="setting-cont-wrap">
+					<div class="setting-content-list">
+					<div class="region">
+						<a href="javascript:;" class="clearfloat">
+							<p>所在地区</p>
+							<span></span>
+						</a>
+					</div>
+					<div class="feedback">
+						<a href="javascript:;" class="clearfloat">
+							<p>意见反馈</p>
+							<span></span>
+						</a>
+					</div>
+					<div class="about">
+						<a href="javascript:;" class="clearfloat">
+							<p>关于我们</p>
+							<span></span>
+						</a>
+					</div>
+					<div class="cache">
+						<a href="javascript:;" class="clearfloat">
+							<p>清除缓存</p>
+							<span></span>
+						</a>
+					</div>
+				</div>
+				<div class="logout">
+					<div class="logout-submit">
+					退出登录
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.setting-content-msg').css('height',$(window).height()-$('.header-hold').height());
+	})
+</script>
+</html>

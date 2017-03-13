@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>婚礼学堂</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/wedding-school.css">
+</head>
+<body style="position:relative;">
+	<div>
+		<div id="common_header">
+			<header class="hds-header">
+				<div class="hds-header-bar">
+					<div id="common_header_goback" class="hds-header-icon-back">
+						<a href="javascript:void(0)" title="">
+							<span></span>
+						</a>
+					</div>
+					<div class="hds-header-title">
+						婚礼学堂
+					</div>
+					<div id="common_header_share" class="hds-header-icon-share" onclick="show()">
+						<span></span>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="plan-content">
+			<div class="header-hold">
+			</div>
+			<div class="plan-wrap">
+				<div class="plan-list">
+					<a href="javascript:void(0)" title="" classify="foreign">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>国外婚礼--异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+					<a href="javascript:void(0)" title="" classify="customs">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>婚礼习俗--异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+					<a href="javascript:void(0)" title="" classify="car">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>婚车习俗--异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+					<a href="javascript:void(0)" title="" classify="jewelry">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>结婚首饰--异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+					<a href="javascript:void(0)" title="" classify="">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+					<a href="javascript:void(0)" title="" classify="">
+						<div class="plan-pic">
+							<img src="images/plan/1.png" alt="">
+						</div>
+						<h2>见主持人怎sdadsas sadas么办？你想知道的细节都在这</h2>
+						<p>异地婚礼怎么办？你想知道的细节都在这！异地婚宴到底如 何安排请那些人？办几场？</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="alert">
+		<div class="opa"></div>
+		<ul class="select">
+			<li class="active" onclick="search(this,'.all')">全部分类</li>
+			<li onclick="search(this,'foreign')">国外婚礼</li>
+			<li onclick="search(this,'customs')">婚礼习俗</li>
+			<li onclick="search(this,'car')">婚车相关</li>
+			<li onclick="search(this,'jewelry')">结婚首饰</li>
+			<li onclick="search(this,'')">。。。。</li>
+			<li onclick="search(this,'')">。。。。</li>
+		</ul>
+	</div>
+</body>
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('body').css('height',$(window).height());
+		$('.plan-wrap').css('height',$(window).height()-$('.header-hold').height());
+	})
+
+</script>
+<script type="text/javascript">
+	function search(sel,name){
+		var $this=$(sel);
+		$('.select li').removeClass('active');
+		$this.addClass('active');
+		$('.alert').hide();
+		$('.plan-list a').each(function() {
+			if($(this).attr('classify')==name){
+				$(this).show();
+			}else if(name=='.all'){
+				$(this).show();
+			}else{
+				$(this).hide();
+			}
+		});
+	}
+	function show(){
+		$('.alert').show();
+	}
+</script>
+</html>

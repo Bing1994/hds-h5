@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>登录</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="gs-logo">
+		<span></span>
+	</div>
+		<section class="page">
+			<div class="wrap">
+				<div class="input-container">
+					<input id="phoneNum" type="text" placeholder="请输入手机号码" class="phoneNum">
+					<span class="icon"></span>
+				</div>
+				<div class="input-box clearfloat">
+					<div class="input-container">
+						<input id="telcode" type="text" placeholder="请输入验证码" class="telcode">
+						<span class="icon"></span>
+					</div>
+					<button class="mesg-code">获取验证码</button>
+				</div>
+				<p class="reg-notice">*登录表示您同意<a href="javascript:;">《婚大圣用户协议》</a></p>
+				<a href="sfyz.html" id="loginBtn" class="btn">登录</a>
+				<div class="quick-login">
+					<a href="javascript:;" class="quick-qq">
+						<i></i>
+					</a>
+					<a href="javascript:;" class="quick-wx">
+						<i></i>
+					</a>
+					<a href="javascript:;" class="quick-wb">
+						<i></i>
+					</a>
+				</div>
+			</div>
+		</section>
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery.md5.js"></script>
+<script>
+	$(function(){
+        var src="http://192.168.1.7/index.php";
+		$('#loginBtn').click(function(){
+			// http://192.168.1.7/index.php?c=Index&a=login&phoneNum=15238379211&ptime=148859022&token=123
+            var ptime=Math.floor(new Date().getTime()/1000);
+            var aa = new Date().getTime();
+            console.log(aa)
+            var token="phoneNum=" + $('#phoneNum').val()+"&ptime="+ptime+"vCN73eQoz2gZ5f8bBrjdniH6l1JmhyqawGA0WPVKMkt4ERTcxDOS9suLYFUIXp";
+            console.log(ptime);
+			$.ajax({
+                type: "post",
+                url: src+"?c=Index&a=login&phoneNum=" +$('#phoneNum').val() + "&ptime="+ptime+"&token="+$.md5(token),
+                success: function (data) {
+                	var json = JSON.parse(data);
+                	console.log(json.flag)
+                    if (json.flag == "Success") {
+                        // location.href = "sfyz.html"; //如果登录成功则跳到身份验证
+                        alert('登录成功');
+                    }
+                    if (json.flag == "Error") {
+                        alert(json.msg);
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(XMLHttpRequest.status);
+                        alert(XMLHttpRequest.readyState);
+                        alert(textStatus);
+                },
+            });
+		});
+	})
+</script>
+</html>

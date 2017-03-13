@@ -1,0 +1,135 @@
+@charset "UTF-8";
+body{
+	background:url(../images/bj.png) no-repeat;
+	background-size:100%;
+	background-size:cover;
+}
+#common_header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index:5;
+    background:url(../images/bj.png) no-repeat;
+}
+.header-hold{
+	min-height:50px;
+}
+.floor-hold{
+	min-height:54px;
+}
+
+.hds-header{
+	min-height: 50px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font-family: "PingHei","Lucida Grande", "Lucida Sans Unicode", "STHeiti", "Helvetica","Arial","Verdana","sans-serif";
+    color: #252525;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hds-header-bar{
+	position: relative;
+	background-size: 100% 50px;
+	min-height:50px;
+	border-bottom: 1px solid #676a77;
+	border-width: 0 0 1px 0;
+}
+.hds-header-icon-back{
+	position: absolute;
+	width:30px;
+	height:50px;
+	left:0;
+	top:0;
+}
+.hds-header-icon-back span{
+	display: block;
+	background:url(../images/back.png) no-repeat;
+	background-size:100%;
+	width:11px;
+	height: 21px;
+	margin-top:12.5px;
+	margin-left: 15px;
+}
+.hds-header-title{
+	margin: 0 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color:#fff;
+}
+.hds-header-icon-share{
+	position:absolute;
+	width:30px;
+	height:50px;
+	right: 0;
+	top:0;
+}
+.hds-header-icon-share span{
+	background:url(../images/share.png) no-repeat;
+	background-size:100%;
+	display:block;
+	width:13px;
+	height:6px;
+	margin-top:23px;
+}
+.floor{
+	width:100%;
+	height:54px;
+	background:rgba(0,0,0,.2);
+	position:fixed;
+	bottom: 0;
+	left: 0;
+}
+.floor-container{
+	padding: 0 20px;
+	height:100%;
+}
+.tab4{
+	width:100%;
+	height:100%;
+}
+.tab4 li{
+	width:25%;
+	text-align:center;
+	float: left;
+	height:100%;
+}
+.tab4 li div{
+	height:26px;
+	position:relative;
+}
+.tab4 a{
+	display:block;
+	width:100%;
+	padding-top:7px;
+}
+.tab4 a.active p{
+	color:#36d6ce;
+}
+.tab4 li p{
+	font-size:13px;
+	color:rgba(255,255,255,.8);
+	line-height:20px;
+}
+.tab4 li img{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+}
+.tab4 li:nth-child(1) img{
+	width:24px;
+}
+.tab4 li:nth-child(2) img{
+	width:23px;
+}
+.tab4 li:nth-child(3) img{
+	width:22px;
+}
+.tab4 li:nth-child(4) img{
+	width:19px;
+}

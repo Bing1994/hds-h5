@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>测试-9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/test-9.css">
+</head>
+<body style="overflow: hidden;">
+	<div>
+		<div id="common_header">
+			<header class="hds-header">
+				<div class="hds-header-bar">
+					<div class="hds-header-title">
+						匹配测试
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="test-content">
+			<div class="header-hold">
+			</div>
+			<div class="test-page">
+				<div class="page">
+				</div>
+			</div>
+			<div class="test-msg-name clearfloat">
+				<span></span><b>我完成的项目</b>
+			</div>
+			<div class="test-msg">
+				<div class="test-item">
+					<div class="item-list clearfloat">
+						<div>
+							<input type="checkbox" id="item-1">
+							<label for="item-1">确定婚宴桌数</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-2">
+							<label for="item-2">买钻戒</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-3">
+							<label for="item-3">拍摄婚纱照</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-4">
+							<label for="item-4">选定策划师</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-5">
+							<label for="item-5">订主持人</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-6">
+							<label for="item-6">订摄影师</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-7">
+							<label for="item-7">订摄像师</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-8">
+							<label for="item-8">订化妆师</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-9">
+							<label for="item-9">订婚纱</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-10">
+							<label for="item-10">订礼服</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-11">
+							<label for="item-11">租赁婚车</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-12">
+							<label for="item-12">定做请柬</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-13">
+							<label for="item-13">选购烟酒、喜酒、喜糖</label>
+						</div>
+						<div>
+							<input type="checkbox" id="item-14">
+							<label for="item-14">布置婚房</label>
+						</div>
+					</div>
+					<div class="test-next">
+						<a href="test-10.html" title=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('body').css('height', $(window).height());
+		$('.test-item').css('height',$(window).height()-$('.header-hold').outerHeight(true)-$('.test-page').outerHeight(true)-$('.test-msg-name').outerHeight(true)-20);
+	})
+</script>
+</html>

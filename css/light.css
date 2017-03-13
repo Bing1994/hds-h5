@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.light-content{
+	width:100%;
+}
+.light-content-msg{
+	padding:26.5px 30px 0;
+}
+.light-content-msg ul>li{
+	width:100%;
+	height:60px;
+	border-radius: 5px;
+	background:rgba(255,255,255,.1);
+	margin-bottom: 10px;
+}
+.light-gs .gs-logo{
+	width:56px;
+	height:56px;
+	border-radius:50%;
+	background:#000;
+	overflow: hidden;
+	margin-top:2px;
+	margin-left:20px;
+}
+.light-gs .gs-logo span{
+	display:block;
+	background:url(../images/gs-logo.png) no-repeat;
+	width:100%;
+	height:100%;
+	background-size:100%;
+}
+.light-gs .gs-name{
+	font-size15px;
+	color:#36d6ce;
+	line-height:56px;
+	margin-left:14px;
+}
+.light-address .light-icon-address span,.light-tel .light-icon-tel span,.light-house .light-icon-house span{
+	width:14px;
+	height:17px;
+	display:block;
+	margin-left:14px;
+	margin-right: 6.5px;
+	margin-top:2px;
+}
+.light-address .light-icon-address span{
+	background:url(../images/address.png) no-repeat;
+	background-size:100%;
+}
+.light-tel .light-icon-tel span{
+	background:url(../images/tel.png) no-repeat;
+	background-size:100%;
+}
+.light-house .light-icon-house span{
+	background:url(../images/house.png) no-repeat;
+	background-size:100%;
+}
+.light-address .light-icon-address b,.light-tel .light-icon-tel b,.light-house .light-icon-house b{
+	font-size:13px;
+	color:#36d6ce;
+	display:block
+}
+.light-address .light-icon-address,.light-tel .light-icon-tel,.light-house .light-icon-house
+{
+	padding-top:22px;
+
+}
+.light-address .light-address-msg,.light-tel .light-tel-msg,.light-house .light-house-msg{
+	font-size:13px;
+	color:#fff;
+	margin-left:20px;
+	padding-top:22px;
+}

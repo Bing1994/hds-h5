@@ -1,0 +1,160 @@
+@charset "UTF-8";
+.share{
+	position: absolute;
+	right: 29px;
+	top: 25px;
+	font-size:0;
+	z-index: 5;
+}
+.share span{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	margin-right:6px;
+}
+.effect-content{
+	width: 100%;
+}
+.effect-content .effect-show{
+	padding: 6.5px 20px 0;
+	overflow: hidden;
+	overflow-y:scroll;
+	position:relative;
+}
+.point span{
+	width:9px;
+	height:9px;
+	background-color:#36d6ce;
+}
+.effect-name{
+	width:100%;
+	margin-top: 10px;
+}
+.effect-name p{
+	font-size:14px;
+	line-height: 14px;
+	color: #fff;
+	opacity: .8;
+	text-align:center;
+}
+.effect-cost{
+	width:100%;
+	margin-top:10px;
+}
+.effect-cost p,.effect-cost p i{
+	font-size:17px;
+	line-height:17px;
+	color:#36d6ce;
+	text-align:center;
+}
+.effect-label{
+	width:100%;
+	margin-top:14.5px;
+	text-align:center;
+}
+.effect-label span{
+	font-size:11px;
+	line-height:20px;
+	color:#fff;
+	opacity:.6;
+	border:1px solid rgba(255,255,255,.6);
+	height:20px;
+	border-radius:9.5px;
+	padding:0 8.5px;
+	margin:0 1px;
+	display:inline-block;
+}
+.effect-label ul>li:active{
+	color:#000;
+	background:#36d6ce;
+}
+.effect-support{
+	width:100%;
+	margin-top:15px;
+}
+.effect-support>div{
+	width:100%;
+	background-color:rgba(255,255,255,.1);
+	height:60px;
+	border-radius:5px;
+	margin-bottom: 10px;
+}
+
+.effect-support .props-info span,.effect-support .light-info span{
+	display:block;
+	width:23.5px;
+	height:23.5px;
+	background: url(../images/props.png) no-repeat;
+	background-size: 100%;
+	float: left;
+	margin-left: 9.5px;
+	margin-top:18px;
+	margin-right:9.5px;
+}
+.effect-support .light-info span{
+	background: url(../images/light.png) no-repeat;
+	background-size: 100%;
+}
+.effect-support .props-info b,.effect-support .light-info b{
+	font-size:13px;
+	color:#36d6ce;
+	float: left;
+	line-height:60px;
+	margin-right: 15px;
+}
+.effect-support .props-msg,.effect-support .light-msg{
+	font-size:12px;
+	line-height:12px;
+	color:#fff;
+	opacity:.8;
+}
+.effect-support .props-msg p,.effect-support .light-msg p{
+	margin-top:12.5px;
+	margin-bottom:10px;
+}
+.effect-support .props-msg .props-cost b,.effect-support .light-msg .light-cost b{
+	color:#36d6ce;
+}
+.contact{
+	width:100%;
+	padding-top:10px;
+}
+.contact .contact-list{
+	padding: 0 11px;
+}
+.contact .contact-list a:active{
+	color:#000;
+	background:#36d6ce;
+}
+.contact  .contact-list div{
+	height:33px;
+	border:0.5px solid #fff;
+	width:48%;
+	border-radius:5px;
+	text-align:center;
+	overflow:hidden;
+}
+.contact .contact-list a{
+	font-size:12px;
+	color:#fff;
+	opacity:0.8;
+	line-height:33px;
+	display:block;
+	width:100%;
+	height:100%;
+}
+.contact .contact-list .tel span{
+	width:19px;
+	height:19px;
+	display:block;
+	background:url(../images/tel.png) no-repeat;
+	background-size:100%;
+	float:left;
+	margin-top:7px;
+	margin-right: 7.5px;
+	margin-left:15%;
+}
+.contact .contact-list .tel  b{
+	float:left;
+	line-height:33px;
+}

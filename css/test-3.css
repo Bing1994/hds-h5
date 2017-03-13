@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.test-content{
+	padding:0 20px;
+}
+.test-page{
+	width: 100%;
+	margin-top: 26.5px;
+}
+.test-page .page{
+	width:45px;
+	height: 47px;
+	background: url(../images/10-3.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.test-msg{
+	margin-top:80px;
+}
+.test-msg-name span{
+	width:10px;
+	height:10px;
+	border-radius: 50%;
+	background:#36d6ce;
+	display: block;
+	float:left;
+	margin-right: 10px;
+	margin-top:3px;
+	margin-left: 6px;
+}
+.test-msg-name b{
+	font-size: 16px;
+	color: #36d6ce;
+	float: left;
+	line-height: 16px;
+}
+.test-next{
+	margin-top:154px;
+}
+.test-next a{
+	display:block;
+	width:60px;
+	height:60px;
+	background:url(../images/next.png);
+	background-size:100%;
+	margin:0 auto;
+}
+.test-wedding{
+	// padding:22px 21px 0;
+	margin-top: 22px;
+}
+.test-wedding>div{
+	width:100%;
+}
+.test-wedding>div>div{
+	border: 1px solid #eee;
+	height:32px;
+	border-radius:5px;
+	overflow: hidden;
+}
+.wedding-dady{
+	width:60%;
+	float:left;
+}
+.wedding-dady input{
+	width:100%;
+	background:none;
+	color:#fff;
+	height:100%;
+}
+.wedding-wait{
+	width:36%;
+	float:right;
+	text-align: center;
+}
+.wedding-wait a{
+	line-height:32px;
+}
+// ::-moz-placeholder { color: #fff; }
+// ::-webkit-input-placeholder { color:#fff; }
+// :-ms-input-placeholder { color:#fff;}

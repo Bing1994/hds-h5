@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我的</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/my.css">
+</head>
+<body style="overflow: hidden;">
+	<div>
+		<div id="common_header">
+			<header class="hds-header">
+				<div class="hds-header-bar">
+					<div class="hds-header-title">
+						我的
+					</div>
+				</div>
+				<div class="hds-header-setting">
+					<a href="setting.html" title="">
+						<span></span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<div class="my-content">
+			<div class="header-hold">
+			</div>
+			<div class="my-cont">
+				<div class="my-herd">
+					<img src="images/user/head-1.jpg" alt="" class="blur">
+					<div class="my-msg">
+						<div class="pic">
+							<img src="images/user/head-1.png" alt="">
+							<a href="javascript:void(0)" title=""></a>
+						</div>
+						<p class="name">关于你的我听着</p>
+					</div>
+				</div>
+				<div class="list-wrap">
+					<div class="list">
+						<a href="javascript:void(0)" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/name.png" alt="">
+								</div>
+								<span>实名认证</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="javascript:void(0)" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/price.png" alt="">
+								</div>
+								<span>在线支付</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="collect.html" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/fav.png" alt="">
+								</div>
+								<span>我的收藏</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="javascript:void(0)" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/test.png" alt="">
+								</div>
+								<span>测试结果</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="javascript:void(0)" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/join.png" alt="">
+								</div>
+								<span>加入我们</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="javascript:void(0)" title="">
+							<div class="wrap">
+								<div class="icon">
+									<img src="images/user/service.png" alt="">
+								</div>
+								<span>联系我们</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+						<a href="wedding-school.html" title="">
+							<div class="wrap">
+								<div class="icon">
+								</div>
+								<span>婚礼学堂</span>
+								<div class="more">
+									<img src="images/more.png" alt="" class="more">
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="floor-hold">
+				</div>
+			</div>
+		</div>
+		<div class="floor">
+			<div class="floor-container">
+				<ul class="tab4">
+					<li>
+						<a href="effect.html" >
+							<div>
+								<img src="images/f-1.png" alt="">
+							</div>
+							<p>婚礼效果</p>
+						</a>
+					</li>
+					<li>
+						<a href="hltd.html">
+							<div>
+								<img src="images/f-2.png" alt="">
+							</div>
+							<p>婚礼团队</p>
+						</a>
+					</li>
+					<li>
+						<a href="wedding-plans.html">
+							<div>
+								<img src="images/f-3.png" alt="">
+							</div>
+							<p>婚礼计划</p>
+						</a>
+					</li>
+					<li>
+						<a href="my.html" class="active">
+							<div>
+								<img src="images/f-4.1.png" alt="">
+							</div>
+							<p>我的</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('body').css('height',$(window).height())
+		$('.my-cont').css('height',$(window).height()-$('header-hold').height()-$('.floor-hold').height());
+	})
+</script>
+</html>

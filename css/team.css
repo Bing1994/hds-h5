@@ -1,0 +1,171 @@
+@charset "UTF-8";
+.team-content{
+	padding:0 20px;
+}
+.tab-list{
+	overflow:hidden;
+	overflow-y: scroll;
+}
+/*
+	导航条
+ */
+.nav{
+	width: 100%;
+	border-radius:5px;
+	overflow: hidden;
+	margin-top:10px;
+}
+.nav-wrap ul{
+	height:33px;
+	border-radius: 3px;
+}
+.nav-wrap ul li{
+	width:20%;
+	height:100%;
+	display:block;
+	font-size:11px;
+	color:#000;
+	text-align: center;
+	line-height:33px;
+	float: left;
+}
+.nav-wrap ul li:nth-child(even){
+	background:#acaeb6;
+}
+.nav-wrap ul li:nth-child(odd){
+	background:#b8b9c1;
+}
+.nav-wrap ul li:active{
+	background:#36d6ce;
+}
+.nav-wrap ul li.active{
+	background:#36d6ce;
+}
+.tab{
+	margin-bottom: 15px;
+}
+/*
+	模块信息
+ */
+
+.common-wrap>a{
+	display:block;
+	background:rgba(255,255,255,.1);
+	border-radius:5px;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.common-wrap>a:active{
+	background:rgba(255,255,255,.2);
+}
+.p-msg .pic{
+	width:44%;
+	height:93px;
+	border-bottom-right-radius:5px;
+	overflow:hidden;
+	float: left;
+	margin-right: 5%;
+}
+.p-msg .pic img{
+	height:100%;
+}
+.p-msg .p-info{
+	float: right;
+	width:50%;
+}
+.p-msg .person{
+	color:#fff;
+}
+.p-msg .name{
+	font-size:15px;
+	opacity: .8;
+	filter:alpha(opacity=80);
+	float: left;
+	line-height:26px;
+}
+.p-msg .price{
+	font-size:10px;
+	opacity: .8;
+	filter:alpha(opacity=80);
+}
+.p-msg .price i{
+	font-size:12px;
+}
+.p-msg .sex-g{
+	color:#f264b9;
+	font-size:12px;
+	float: left;
+	margin-right:12px;
+	margin-bottom: 2px;
+}
+.p-msg .sex-g i{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	background:url(../images/team/girl.png) no-repeat;
+	background-size:100%;
+	margin-right:3px;
+}
+.p-msg .constell{
+	float: left;
+	font-size:10px;
+	opacity: .8;
+	filter:alpha(opacity=80);
+	margin-bottom: 2px;
+}
+.p-msg .plan,.p-msg .works{
+	font-size:10px;
+	line-height:10px;
+	opacity: .8;
+	filter:alpha(opacity=80);
+}
+.p-msg .plan{
+	margin-bottom: 8px;
+    margin-top: 5px;
+}
+.p-msg .plan b,.p-msg .works b{
+	color:#36d6ce;
+	opacity: .8;
+	filter:alpha(opacity=80);
+	font-size:10px;
+	margin-left:10px;
+}
+.location{
+	float: right;
+	margin-right:10px;
+	margin-top:10px;
+}
+.location span{
+	width:8px;
+	height:10px;
+	background:url(../images/team/location.png) no-repeat;
+	background-size: 100%;
+	display:block;
+	float: left;
+	margin-top:3px;
+	margin-right:3px;
+}
+.location p{
+	font-size:12px;
+	float: left;
+}
+.p-tag{
+	width:103%;
+}
+.p-tag .tag-list{
+	margin-top:10px;
+}
+.p-tag .tag-list li{
+	height:20px;
+	background:rgba(255,255,255,.2);
+	border-radius:10px;
+	float: left;
+	margin-bottom:10px;
+	margin-right:10px;
+	box-sizing: border-box;
+}
+.p-tag .tag-list li i{
+	line-height:20px;
+	padding: 0 9.5px;
+	color:rgba(255,255,255,.6);
+}

@@ -1,0 +1,173 @@
+.circle-wrap,.circle,.percent,.num{
+    position: absolute;
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    left:-3px;top:-3px;
+}
+.circle-wrap{
+    border:3px solid #7a7e8e;
+    box-sizing:border-box;
+    position: relative;
+    left:50%;
+    margin-left:-72px;
+    margin-top:40px;
+    box-shadow: 1px 1px 15px #fff,1px 1px 15px #fff inset;
+}
+.circle{
+    box-sizing: border-box;
+    border:3px solid #7a7e8e;
+    clip:rect(0,144px,144px,72px);
+}
+.clip-auto{
+    clip:rect(auto, auto, auto, auto);
+}
+.percent{
+    box-sizing: border-box;
+}
+.left{
+    transition:transform ease;
+    border:3px solid #36d6ce;
+    clip: rect(0,72px,144px,0);
+    z-index:5;
+}
+.right{
+    border:3px solid #36d6ce;
+    clip: rect(0,144px,144px,72px);
+    z-index:5;
+}
+.wth0{
+    width:0;
+}
+.num{
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    color:rgba(255,255,255,.8);
+    padding-top:26%;
+}
+.num p{
+    font-size:12px;
+    line-height:12px;
+    color:#fff;
+}
+.complete{
+    padding:0 20px;
+}
+.group input{
+    display:none;
+}
+.total-wrap{
+    text-align:center;
+}
+.total{
+    width:50%;
+}
+.total input:checked+label{
+    background:#36d6ce;
+}
+.total input:checked+label+span{
+    color:#36d6ce;
+}
+.group-list input:checked+label{
+    background:#36d6ce;
+}
+.group-list input:checked+label+.gl-msg>.send{
+    background:#36d6ce;
+    color:rgba(255,255,255,.8);
+}
+.group-list input:checked+label+.gl-msg>.send>.arrow{
+    border-color: rgba(0,0,0,0) #36d6ce rgba(0,0,0,0) rgba(0,0,0,0);
+}
+.total label{
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: rgba(255,255,255,.2);
+    vertical-align: top;
+    float: right;
+    margin-left: 10px;
+    margin-right:-22px;
+}
+.total label.end{
+    background:none;
+}
+.total>span{
+    font-size:14px;
+    color:rgba(255,255,255,.8);
+    display:block;
+    height:40px;
+    line-height:40px;
+    vertical-align: top;
+    float: right;
+}
+.group-list{
+    overflow: hidden;
+    height:0;
+}
+.group-list >div{
+    padding-left: 50%;
+}
+.group-list label{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background: rgba(255,255,255,.2);
+    vertical-align: top;
+    float: left;
+    margin-right: 10px;
+    margin-left:-14px;
+}
+.group-list span{
+    font-size:10px;
+    color:rgba(255,255,255,.8);
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    vertical-align: top;
+    float: left;
+}
+.group-list p,.complete>p,.group>p{
+    height:40px;
+    width:50%;
+    border-right:2.5px solid #6e6f86;
+    margin: 2px 0;
+}
+.complete>p,.group>p{
+    height:20px;
+}
+.group-list>div{
+    zoom:1;
+}
+.group-list>div:after{
+    display:block;content:''; clear:both;
+}
+.gl-msg{
+    float: left;
+    height:100%;
+}
+.send {
+    position:relative;
+    background:rgba(0,0,0,.2);
+    border-radius:5px; /* 圆角 */
+    padding:0 9px;
+    line-height:20px;
+    margin-top:5px;
+    font-size:10px;
+    color:rgba(255,255,255,.6);
+}
+.send .arrow {
+    position:absolute;
+    top:6px;
+    left:-8px; /* 圆角的位置需要细心调试哦 */
+    width:0;
+    height:0;
+    font-size:0;
+    border:solid 4px;
+    border-color:rgba(0,0,0,0) rgba(0,0,0,.2) rgba(0,0,0,0) rgba(0,0,0,0) ;
+}
+</style>
